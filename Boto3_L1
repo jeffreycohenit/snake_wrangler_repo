@@ -1,0 +1,9 @@
+# Creating AWS S3 Bucket using Boto3
+
+import boto3
+aws_resource=boto3.resoucre("s3")
+bucket=aws_resource.bucket("jeffreylearningboto3withlu")
+response = bucket.create
+    ACL='public-red',
+    CreateBucketConfiguration={
+        'LocationCon
